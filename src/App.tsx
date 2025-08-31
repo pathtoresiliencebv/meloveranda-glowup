@@ -13,6 +13,7 @@ import GlazenSchuifwanden from "./pages/GlazenSchuifwanden";
 import OnderZonwering from "./pages/OnderZonwering";
 import Zijwand from "./pages/Zijwand";
 import LosseMontage from "./pages/LosseMontage";
+import OverOns from "./pages/OverOns";
 
 const queryClient = new QueryClient();
 
@@ -26,6 +27,7 @@ const App = () => (
           <Route path="/" element={<Index />} />
           <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/over-ons" element={<OverOns />} />
           <Route path="/diensten" element={<DienstenOverzicht />} />
           <Route path="/diensten/spie-op-schutting" element={<SpieOpSchutting />} />
           <Route path="/diensten/glazen-schuifwanden" element={<GlazenSchuifwanden />} />

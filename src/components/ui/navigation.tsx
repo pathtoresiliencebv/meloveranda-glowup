@@ -16,7 +16,7 @@ export const Navigation = () => {
   const navItems = [
     { label: "Home", href: "/" },
     { label: "Portfolio", href: "/portfolio" },
-    { label: "Over Ons", href: "/" },
+    { label: "Over Ons", href: "/over-ons" },
     { label: "Contact", href: "/contact" },
   ];
 
