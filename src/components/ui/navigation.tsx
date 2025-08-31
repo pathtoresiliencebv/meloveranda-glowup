@@ -1,16 +1,31 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { Menu, X } from "lucide-react";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
+import { Menu, X, ChevronDown } from "lucide-react";
+import { Link } from "react-router-dom";
 
 export const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const navItems = [
-    { label: "Home", href: "#home" },
+    { label: "Home", href: "/" },
     { label: "Over Ons", href: "#about" },
-    { label: "Diensten", href: "#services" },
     { label: "Portfolio", href: "#portfolio" },
     { label: "Contact", href: "#contact" },
+  ];
+
+  const serviceItems = [
+    { label: "Overzicht", href: "/diensten" },
+    { label: "Spie op schutting", href: "/diensten/spie-op-schutting" },
+    { label: "Glazen schuifwanden", href: "/diensten/glazen-schuifwanden" },
+    { label: "Onder zonwering", href: "/diensten/onder-zonwering" },
+    { label: "Zijwand", href: "/diensten/zijwand" },
+    { label: "Losse montage", href: "/diensten/losse-montage" },
   ];
 
   return (
@@ -28,21 +43,43 @@ export const Navigation = () => {
           <div className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-8">
               {navItems.map((item) => (
-                <a
+                <Link
                   key={item.label}
-                  href={item.href}
+                  to={item.href}
                   className="text-foreground hover:text-primary px-3 py-2 text-sm font-medium transition-colors duration-300"
                 >
                   {item.label}
-                </a>
+                </Link>
               ))}
+              
+              {/* Services Dropdown */}
+              <DropdownMenu>
+                <DropdownMenuTrigger asChild>
+                  <Button variant="ghost" className="px-3 py-2 text-sm font-medium text-foreground hover:text-primary">
+                    Diensten
+                    <ChevronDown className="ml-1 h-4 w-4" />
+                  </Button>
+                </DropdownMenuTrigger>
+                <DropdownMenuContent align="start" className="w-56 bg-background border border-border shadow-lg">
+                  {serviceItems.map((item) => (
+                    <DropdownMenuItem key={item.label} asChild>
+                      <Link
+                        to={item.href}
+                        className="w-full px-2 py-2 text-sm text-foreground hover:text-primary hover:bg-muted/50 cursor-pointer"
+                      >
+                        {item.label}
+                      </Link>
+                    </DropdownMenuItem>
+                  ))}
+                </DropdownMenuContent>
+              </DropdownMenu>
             </div>
           </div>
 
           {/* CTA Button */}
           <div className="hidden md:block">
-            <Button variant="default" className="bg-gradient-to-r from-primary to-accent hover:shadow-warm transition-all duration-300">
-              Offerte Aanvragen
+            <Button asChild variant="default" className="bg-gradient-to-r from-primary to-accent hover:shadow-warm transition-all duration-300">
+              <Link to="/contact">Offerte Aanvragen</Link>
             </Button>
           </div>
 
@@ -63,18 +100,34 @@ export const Navigation = () => {
           <div className="md:hidden">
             <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-card rounded-lg mt-2 shadow-glass">
               {navItems.map((item) => (
-                <a
+                <Link
                   key={item.label}
-                  href={item.href}
+                  to={item.href}
                   className="text-foreground hover:text-primary block px-3 py-2 text-base font-medium transition-colors"
                   onClick={() => setIsOpen(false)}
                 >
                   {item.label}
-                </a>
+                </Link>
               ))}
+              
+              {/* Mobile Services Menu */}
+              <div className="pt-2">
+                <div className="text-foreground font-medium px-3 py-2 text-base">Diensten</div>
+                {serviceItems.map((item) => (
+                  <Link
+                    key={item.label}
+                    to={item.href}
+                    className="text-muted-foreground hover:text-primary block px-6 py-2 text-sm transition-colors"
+                    onClick={() => setIsOpen(false)}
+                  >
+                    {item.label}
+                  </Link>
+                ))}
+              </div>
+              
               <div className="pt-4">
-                <Button className="w-full bg-gradient-to-r from-primary to-accent">
-                  Offerte Aanvragen
+                <Button asChild className="w-full bg-gradient-to-r from-primary to-accent">
+                  <Link to="/contact">Offerte Aanvragen</Link>
                 </Button>
               </div>
             </div>
