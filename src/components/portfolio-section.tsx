@@ -204,9 +204,12 @@ export const PortfolioSection = () => {
                     ))}
                   </ul>
                 </div>
-                <Button className="w-full">
-                  Vergelijkbaar Project Aanvragen
-                </Button>
+                          <Button 
+                            className="w-full"
+                            onClick={() => window.location.href = '/contact'}
+                          >
+                            Vergelijkbaar Project Aanvragen
+                          </Button>
               </div>
             </div>
           </div>

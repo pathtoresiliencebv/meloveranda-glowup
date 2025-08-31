@@ -40,6 +40,7 @@ export const HeroSection = () => {
             <Button 
               size="lg" 
               className="bg-gradient-to-r from-primary to-accent hover:shadow-warm transition-all duration-500 text-lg px-8 py-4 group"
+              onClick={() => window.location.href = '/contact'}
             >
               Gratis Offerte
               <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
@@ -49,6 +50,7 @@ export const HeroSection = () => {
               variant="outline" 
               size="lg" 
               className="bg-gradient-to-r from-primary to-accent hover:shadow-warm transition-all duration-300 text-lg px-8 py-4 group backdrop-blur-sm border-none text-white"
+              onClick={() => window.location.href = '/portfolio'}
             >
               <Play className="mr-2 h-5 w-5 group-hover:scale-110 transition-transform" />
               Bekijk Ons Werk

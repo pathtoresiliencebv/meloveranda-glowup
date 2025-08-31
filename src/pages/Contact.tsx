@@ -9,12 +9,47 @@ import { Phone, Mail, MapPin, Clock, CheckCircle } from "lucide-react";
 import { HeroBackground } from "@/components/ui/hero-background";
 import { SEOHead } from "@/components/ui/seo-head";
 import { getLocalBusinessSchema, getBreadcrumbSchema } from "@/lib/schema-data";
+import { useContactForm } from "@/hooks/use-contact-form";
+import { Toaster } from "@/components/ui/toaster";
+import { useState } from "react";
 
 const Contact = () => {
+  const { submitForm, isSubmitting } = useContactForm();
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    phone: '',
+    subject: '',
+    message: ''
+  });
+
   const breadcrumbSchema = getBreadcrumbSchema([
     { name: "Home", url: "/" },
     { name: "Contact", url: "/contact" }
   ]);
+
+  const handleFormSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    const form = e.currentTarget;
+    const formData = new FormData(form);
+    
+    const contactData = {
+      name: formData.get('name') as string,
+      email: formData.get('email') as string,
+      phone: formData.get('phone') as string,
+      subject: formData.get('subject') as string,
+      message: formData.get('message') as string,
+    };
+
+    const result = await submitForm(contactData);
+    if (result.success) {
+      form.reset();
+    }
+  };
+
+  const scrollToForm = () => {
+    document.getElementById('contact-form')?.scrollIntoView({ behavior: 'smooth' });
+  };
 
   return (
     <div className="min-h-screen bg-background">
@@ -57,7 +92,7 @@ const Contact = () => {
                   </p>
                 </CardHeader>
                 <CardContent className="space-y-6">
-                  <form action="mailto:info@meloveranda.nl" method="post" encType="text/plain" className="space-y-6">
+                  <form id="contact-form" className="space-y-6" onSubmit={handleFormSubmit}>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                       <div className="space-y-2">
                         <label htmlFor="name" className="text-sm font-medium text-foreground">
@@ -120,9 +155,14 @@ const Contact = () => {
                       />
                     </div>
                     
-                    <Button type="submit" className="w-full bg-gradient-to-r from-primary to-accent hover:shadow-warm transition-all duration-300" size="lg">
-                      Verstuur Bericht
-                    </Button>
+                     <Button 
+                       type="submit" 
+                       disabled={isSubmitting}
+                       className="w-full bg-gradient-to-r from-primary to-accent hover:shadow-warm transition-all duration-300" 
+                       size="lg"
+                     >
+                       {isSubmitting ? "Verzenden..." : "Verstuur Bericht"}
+                     </Button>
                   </form>
                 </CardContent>
               </Card>
@@ -194,9 +234,12 @@ const Contact = () => {
                     <CheckCircle className="h-5 w-5 text-primary flex-shrink-0" />
                     <span className="text-sm">Geen verborgen kosten</span>
                   </div>
-                  <Button className="w-full mt-4 bg-gradient-to-r from-primary to-accent hover:shadow-warm transition-all duration-300">
-                    Plan Afspraak
-                  </Button>
+                   <Button 
+                     className="w-full mt-4 bg-gradient-to-r from-primary to-accent hover:shadow-warm transition-all duration-300"
+                     onClick={scrollToForm}
+                   >
+                     Plan Afspraak
+                   </Button>
                 </CardContent>
               </Card>
             </div>
@@ -252,6 +295,7 @@ const Contact = () => {
       </section>
 
       <Footer />
+      <Toaster />
     </div>
   );
 };

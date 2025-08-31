@@ -5,6 +5,7 @@ import { AboutSection } from "@/components/about-section";
 import { PortfolioSection } from "@/components/portfolio-section";
 import { ContactSection } from "@/components/contact-section";
 import { Footer } from "@/components/footer";
+import { Toaster } from "@/components/ui/toaster";
 import { SEOHead } from "@/components/ui/seo-head";
 import { getLocalBusinessSchema, getOrganizationSchema, getWebsiteSchema } from "@/lib/schema-data";
 
@@ -31,6 +32,7 @@ const Index = () => {
       <PortfolioSection />
       <ContactSection />
       <Footer />
+      <Toaster />
     </div>
   );
 };
