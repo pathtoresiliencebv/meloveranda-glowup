@@ -119,6 +119,106 @@ const portfolioProjects: PortfolioProject[] = [
     details: ["Pergola constructie", "Strakke lijnen", "Duurzame materialen", "Weersbestendig"],
     location: "Waalre",
     year: "2024"
+  },
+  {
+    id: "11",
+    title: "Terrasoverkapping met LED Verlichting",
+    category: "overkapping",
+    description: "Stijlvolle terrasoverkapping met sfeervolle LED verlichting voor avondgebruik",
+    image: "/lovable-uploads/589b0b90-2c28-4e2b-8535-f5430c348fb3.png",
+    details: ["LED verlichting geïntegreerd", "Windscherm wanden", "Sfeervolle avondverlichting", "Weersbestendig"],
+    location: "Mierlo",
+    year: "2024"
+  },
+  {
+    id: "12",
+    title: "Stalen Pergola Constructie",
+    category: "overkapping",
+    description: "Robuuste stalen pergola constructie in aanbouw fase",
+    image: "/lovable-uploads/89d4c57d-bc6a-4a05-a26e-7b858f292143.png",
+    details: ["Stalen frame constructie", "Modulaire opbouw", "Duurzame materialen", "Professionele montage"],
+    location: "Budel",
+    year: "2024"
+  },
+  {
+    id: "13",
+    title: "Carport Overkapping Polycarbonaat",
+    category: "overkapping",
+    description: "Moderne carport overkapping met polycarbonaat platen",
+    image: "/lovable-uploads/ad169e18-a427-4a33-b2ce-6a747895e71c.png",
+    details: ["Polycarbonaat dakbedekking", "Aluminium frame", "Optimale lichtinval", "Onderhoudsvrij"],
+    location: "Leende",
+    year: "2024"
+  },
+  {
+    id: "14",
+    title: "Avond Terras met Sfeerverlichting",
+    category: "overkapping",
+    description: "Luxe terrasoverkapping met geïntegreerde avondverlichting",
+    image: "/lovable-uploads/9962926a-c14c-4e06-98ba-80513dcc68af.png",
+    details: ["Dimbare LED strips", "Avondsfeer creatie", "Weersbestendige verlichting", "Moderne uitstraling"],
+    location: "Heeze",
+    year: "2024"
+  },
+  {
+    id: "15",
+    title: "Grote Terrasoverkapping Antraciet",
+    category: "overkapping",
+    description: "Ruime terrasoverkapping in antraciet voor grote buitenruimtes",
+    image: "/lovable-uploads/9c2348a0-b33e-4556-b6c3-ca500a2a1809.png",
+    details: ["Grote overspanning", "Antraciet kleurstelling", "Helder glas dak", "Strakke lijnen"],
+    location: "Cranendonck",
+    year: "2024"
+  },
+  {
+    id: "16",
+    title: "Terrasoverkapping met Bakstenen Details",
+    category: "overkapping",
+    description: "Eigentijdse overkapping met bakstenen elementen en polycarbonaat",
+    image: "/lovable-uploads/cf21e2bb-28a3-4857-aef1-794d23973e74.png",
+    details: ["Bakstenen details", "Polycarbonaat dakplaten", "Natuurlijke materialen", "Klassieke uitstraling"],
+    location: "Someren",
+    year: "2024"
+  },
+  {
+    id: "17",
+    title: "Glazen Serre Interieur",
+    category: "glazen-schuifwanden",
+    description: "Moderne glazen serre met complete glazen wanden en dak",
+    image: "/lovable-uploads/d3a0dcfb-6a1d-42d3-ab78-c57a3a2eacaf.png",
+    details: ["Volledig glazen constructie", "Natuurlijke lichtinval", "Jaarrond gebruik", "Tuinmeubilair integratie"],
+    location: "Asten",
+    year: "2024"
+  },
+  {
+    id: "18",
+    title: "Moderne Glazen Schuifwand Premium",
+    category: "glazen-schuifwanden",
+    description: "Luxe glazen schuifwand systeem met grote glaspanelen",
+    image: "/lovable-uploads/5e56f360-f749-497c-b501-55f51e197e6a.png",
+    details: ["Grote glaspanelen", "Minimale profielen", "Optimale doorkijk", "Premium afwerking"],
+    location: "Deurne",
+    year: "2024"
+  },
+  {
+    id: "19",
+    title: "Avondterras met Pergola Verlichting",
+    category: "overkapping",
+    description: "Stijlvolle pergola met geïntegreerde LED verlichting voor avondgebruik",
+    image: "/lovable-uploads/38b48f40-0d5d-40d4-9f25-de854a8ea3d6.png",
+    details: ["Pergola constructie", "LED strips geïntegreerd", "Avondsfeer optimaal", "Modern design"],
+    location: "Gemert",
+    year: "2024"
+  },
+  {
+    id: "20",
+    title: "Glazen Schuifwand Systeem Compleet",
+    category: "glazen-schuifwanden",
+    description: "Complete glazen schuifwand met optimale opening en sluiting",
+    image: "/lovable-uploads/9015fa2c-4545-4112-85cf-e90a951633c9.png",
+    details: ["Volledige opening mogelijk", "Minimale bodemrails", "Gehard veiligheidsglas", "Soepele bediening"],
+    location: "Laarbeek",
+    year: "2024"
   }
 ];
 
