@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { ArrowRight, Shield, Wind, Sun, Home, Wrench } from "lucide-react";
 import { Link } from "react-router-dom";
+import { HeroBackground } from "@/components/ui/hero-background";
 
 const services = [
   {
@@ -11,6 +12,7 @@ const services = [
     title: "Spie op schutting",
     description: "Dicht uw overkapping af aan de zijkant voor meer privacy of tegen wind, regen en zon.",
     icon: Shield,
+    image: "/lovable-uploads/5df3681b-7547-43cf-a296-c1f77daafbb0.png",
     features: ["Meer privacy", "Bescherming tegen wind en regen", "Zonbescherming"]
   },
   {
@@ -18,6 +20,7 @@ const services = [
     title: "Glazen schuifwanden",
     description: "Sluit uw veranda af wanneer het fris wordt, open ze weer wanneer het warm wordt.",
     icon: Wind,
+    image: "/lovable-uploads/38b48f40-0d5d-40d4-9f25-de854a8ea3d6.png",
     features: ["Flexibel open en dicht", "Bescherming bij koud weer", "Optimaal genieten van mooi weer"]
   },
   {
@@ -25,6 +28,7 @@ const services = [
     title: "Onder zonwering",
     description: "Op maat gemaakte zonwering van tuinmaximaal voor uw overkapping.",
     icon: Sun,
+    image: "/lovable-uploads/89d4c57d-bc6a-4a05-a26e-7b858f292143.png",
     features: ["Op maat gemaakt", "Inkorten in lengte en breedte mogelijk", "Europese kwaliteit"]
   },
   {
@@ -32,6 +36,7 @@ const services = [
     title: "Zijwand",
     description: "Dicht uw veranda af aan de zijkanten met verschillende materiaalopties.",
     icon: Home,
+    image: "/lovable-uploads/c52a7d95-1bd4-4147-856e-79124a2a4ef0.png",
     features: ["Polycarbonaat zijwanden", "Sandwichpaneel met spie", "Aluminium rabat zijwanden"]
   },
   {
@@ -39,6 +44,7 @@ const services = [
     title: "Losse montage",
     description: "Professionele montage en service voor al uw veranda-oplossingen.",
     icon: Wrench,
+    image: "/lovable-uploads/9015fa2c-4545-4112-85cf-e90a951633c9.png",
     features: ["Professionele montage", "Service en onderhoud", "Expertise in Limburg"]
   }
 ];
@@ -49,19 +55,19 @@ const DienstenOverzicht = () => {
       <Navigation />
       
       {/* Hero Section */}
-      <section className="relative py-24 bg-gradient-to-r from-primary/10 to-accent/10">
+      <HeroBackground>
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl md:text-6xl font-bold text-muted-foreground mb-6">
+            <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
               Onze Diensten
             </h1>
-            <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
+            <p className="text-xl text-white/90 mb-8 leading-relaxed">
               Van spie op schutting tot complete montage - wij bieden alle oplossingen 
               voor uw perfecte veranda-ervaring in Limburg.
             </p>
           </div>
         </div>
-      </section>
+      </HeroBackground>
 
       {/* Services Grid */}
       <section className="py-16">
@@ -70,11 +76,21 @@ const DienstenOverzicht = () => {
             {services.map((service) => {
               const IconComponent = service.icon;
               return (
-                <Card key={service.id} className="group hover:shadow-lg transition-all duration-300 border-0 shadow-md">
-                  <CardHeader className="text-center pb-4">
-                    <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-gradient-to-r from-primary to-accent flex items-center justify-center">
-                      <IconComponent className="w-8 h-8 text-white" />
+                <Card key={service.id} className="group hover:shadow-lg transition-all duration-300 border-0 shadow-md overflow-hidden">
+                  <div className="relative h-48 overflow-hidden">
+                    <img
+                      src={service.image}
+                      alt={service.title}
+                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+                    <div className="absolute bottom-4 left-4">
+                      <div className="w-12 h-12 rounded-full bg-gradient-to-r from-primary to-accent flex items-center justify-center">
+                        <IconComponent className="w-6 h-6 text-white" />
+                      </div>
                     </div>
+                  </div>
+                  <CardHeader className="text-center pb-4">
                     <CardTitle className="text-xl font-bold text-foreground">
                       {service.title}
                     </CardTitle>

@@ -5,6 +5,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import { ChevronLeft, ChevronRight, ExternalLink } from "lucide-react";
+import { Link } from "react-router-dom";
 
 interface PortfolioProject {
   id: string;
@@ -21,7 +22,7 @@ const portfolioProjects: PortfolioProject[] = [
     title: "Moderne Glazen Veranda",
     category: "glazen-schuifwanden",
     description: "Strak design met helder glas en aluminium framewerk",
-    image: "/placeholder.svg",
+    image: "/lovable-uploads/38b48f40-0d5d-40d4-9f25-de854a8ea3d6.png",
     details: ["Helder glas 8mm", "Aluminium profiel", "Automatische drainage"]
   },
   {
@@ -29,7 +30,7 @@ const portfolioProjects: PortfolioProject[] = [
     title: "Luxe Overkapping met Zonwering",
     category: "onder-zonwering",
     description: "Volledig geïntegreerde zonwering oplossing",
-    image: "/placeholder.svg",
+    image: "/lovable-uploads/89d4c57d-bc6a-4a05-a26e-7b858f292143.png",
     details: ["Motorische zonwering", "LED verlichting", "Regensensor"]
   },
   {
@@ -37,7 +38,7 @@ const portfolioProjects: PortfolioProject[] = [
     title: "Elegante Zijwand Constructie",
     category: "zijwand", 
     description: "Windbreking met design elementen",
-    image: "/placeholder.svg",
+    image: "/lovable-uploads/c52a7d95-1bd4-4147-856e-79124a2a4ef0.png",
     details: ["Windwering tot 6 bft", "Gehard veiligheidsglas", "Strakke lijnen"]
   },
   {
@@ -45,7 +46,7 @@ const portfolioProjects: PortfolioProject[] = [
     title: "Tuinkamer met Schuifwanden",
     category: "glazen-schuifwanden",
     description: "Complete tuinkamer oplossing jaar rond gebruik",
-    image: "/placeholder.svg", 
+    image: "/lovable-uploads/c4c8b06b-6ba3-4ac7-ad05-de2eec71d425.png", 
     details: ["4-seizoenen gebruik", "Volledige opening mogelijk", "Geïsoleerde profielen"]
   },
   {
@@ -53,7 +54,7 @@ const portfolioProjects: PortfolioProject[] = [
     title: "Terrasoverkapping met Verlichting",
     category: "overkapping",
     description: "Sfeervolle avond beleving gegarandeerd",
-    image: "/placeholder.svg",
+    image: "/lovable-uploads/9015fa2c-4545-4112-85cf-e90a951633c9.png",
     details: ["Dimbare LED strips", "Waterdichte connectoren", "Moderne vormgeving"]
   },
   {
@@ -61,7 +62,7 @@ const portfolioProjects: PortfolioProject[] = [
     title: "Glazen Schuifwand Systeem",
     category: "glazen-schuifwanden", 
     description: "Naadloze overgang binnen en buiten",
-    image: "/placeholder.svg",
+    image: "/lovable-uploads/d68edfdd-983b-4d75-8ad9-be0b11f4ca11.png",
     details: ["Minimale bodemrails", "Maximale glasoppervlak", "Eenvoudige bediening"]
   }
 ];
@@ -117,11 +118,8 @@ export const PortfolioSection = () => {
         {/* Portfolio Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
           {filteredProjects.map((project) => (
-            <Card 
-              key={project.id} 
-              className="group cursor-pointer hover:shadow-elegant transition-all duration-300 hover:-translate-y-1 overflow-hidden"
-              onClick={() => setSelectedProject(project)}
-            >
+            <Link to="/portfolio" key={project.id}>
+              <Card className="group cursor-pointer hover:shadow-elegant transition-all duration-300 hover:-translate-y-1 overflow-hidden">
               <div className="relative overflow-hidden">
                 <img
                   src={project.image}
@@ -154,7 +152,8 @@ export const PortfolioSection = () => {
                   <ExternalLink className="ml-2 h-4 w-4" />
                 </Button>
               </CardContent>
-            </Card>
+              </Card>
+            </Link>
           ))}
         </div>
 
@@ -167,8 +166,8 @@ export const PortfolioSection = () => {
             Laat ons ook voor u een unieke veranda, overkapping of glazen constructie realiseren. 
             Vraag een vrijblijvende offerte aan.
           </p>
-          <Button size="lg" className="bg-primary hover:bg-primary/90">
-            Gratis Offerte Aanvragen
+          <Button size="lg" className="bg-primary hover:bg-primary/90" asChild>
+            <Link to="/portfolio">Bekijk Ons Werk</Link>
           </Button>
         </div>
 

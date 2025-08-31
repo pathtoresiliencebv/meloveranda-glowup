@@ -7,6 +7,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
 import { ChevronLeft, ChevronRight, X } from "lucide-react";
+import { HeroBackground } from "@/components/ui/hero-background";
 
 interface PortfolioProject {
   id: string;
@@ -423,28 +424,28 @@ const Portfolio = () => {
       <Navigation />
       
       {/* Hero Section */}
-      <section className="pt-24 pb-16 bg-gradient-to-br from-primary/5 to-secondary/10">
+      <HeroBackground>
         <div className="container mx-auto px-4 text-center">
-          <Badge variant="outline" className="mb-4 bg-primary/10 text-primary border-primary/20">
+          <Badge variant="outline" className="mb-4 bg-white/20 text-white border-white/30">
             Portfolio
           </Badge>
-          <h1 className="text-4xl md:text-6xl font-bold mb-6 text-muted-foreground">
+          <h1 className="text-4xl md:text-6xl font-bold mb-6 text-white">
             Onze Gerealiseerde Projecten
           </h1>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-8">
+          <p className="text-xl text-white/90 max-w-3xl mx-auto mb-8">
             Ontdek de kwaliteit en het vakmanschap in onze uitgevoerde projecten. 
             Van moderne glazen veranda's tot stijlvolle overkappingen - elk project wordt op maat gemaakt.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-gradient-to-r from-primary to-accent hover:shadow-warm transition-all duration-300">
+            <Button size="lg" className="bg-white/20 backdrop-blur-sm border-white/30 text-white hover:bg-white/30 transition-all duration-300">
               Gratis Offerte Aanvragen
             </Button>
-            <Button variant="outline" size="lg" className="bg-gradient-to-r from-primary to-accent hover:shadow-warm transition-all duration-300 border-none text-white">
+            <Button variant="outline" size="lg" className="bg-white/10 backdrop-blur-sm border-white/30 text-white hover:bg-white/20 transition-all duration-300">
               Bekijk Onze Diensten
             </Button>
           </div>
         </div>
-      </section>
+      </HeroBackground>
 
       {/* Portfolio Gallery */}
       <section className="py-16">

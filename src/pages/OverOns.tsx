@@ -4,6 +4,7 @@ import { Badge } from "@/components/ui/badge";
 import { CheckCircle, Star, Clock, Shield, Award, Search, Settings, Smile, MapPin, Phone, Mail, Building } from "lucide-react";
 import { Navigation } from "@/components/ui/navigation";
 import { Footer } from "@/components/footer";
+import { HeroBackground } from "@/components/ui/hero-background";
 
 export default function OverOns() {
   const benefits = [
@@ -89,23 +90,22 @@ export default function OverOns() {
       <Navigation />
       
       {/* Hero Section */}
-      <section className="pt-32 pb-20 bg-gradient-hero relative overflow-hidden">
-        <div className="absolute inset-0 bg-grid-pattern opacity-10"></div>
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative">
+      <HeroBackground>
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto text-center">
-            <div className="inline-flex items-center px-4 py-2 rounded-full bg-gradient-warm/10 border border-primary/20 mb-6">
-              <span className="text-sm font-medium text-primary">OVER ONS</span>
+            <div className="inline-flex items-center px-4 py-2 rounded-full bg-white/20 backdrop-blur-sm border border-white/30 mb-6">
+              <span className="text-sm font-medium text-white">OVER ONS</span>
             </div>
-            <h1 className="text-4xl md:text-6xl font-bold text-muted-foreground mb-6">
+            <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
               Melo Montage Service
             </h1>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+            <p className="text-xl text-white/90 max-w-3xl mx-auto leading-relaxed">
               Uw specialist in luxe overkappingen en veranda's in Limburg en ver daarbuiten. 
               Kwaliteit, betrouwbaarheid en persoonlijke service staan bij ons centraal.
             </p>
           </div>
         </div>
-      </section>
+      </HeroBackground>
 
       {/* Mission & Vision */}
       <section className="py-20">

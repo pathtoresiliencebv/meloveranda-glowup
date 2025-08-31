@@ -6,6 +6,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Phone, Mail, MapPin, Clock, CheckCircle } from "lucide-react";
+import { HeroBackground } from "@/components/ui/hero-background";
 
 const Contact = () => {
   return (
@@ -13,20 +14,20 @@ const Contact = () => {
       <Navigation />
       
       {/* Hero Section */}
-      <section className="pt-24 pb-16 bg-gradient-to-br from-primary/5 to-secondary/10">
+      <HeroBackground>
         <div className="container mx-auto px-4 text-center">
-          <Badge variant="outline" className="mb-4 bg-primary/10 text-primary border-primary/20">
+          <Badge variant="outline" className="mb-4 bg-white/20 text-white border-white/30">
             Contact & Offerte
           </Badge>
-          <h1 className="text-4xl md:text-6xl font-bold mb-6 text-muted-foreground">
+          <h1 className="text-4xl md:text-6xl font-bold mb-6 text-white">
             Vraag een Gratis Offerte Aan
           </h1>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-8">
+          <p className="text-xl text-white/90 max-w-3xl mx-auto mb-8">
             Neem contact met ons op voor een vrijblijvende offerte. 
             Wij komen gratuït bij u langs voor een professioneel inmeetadvies.
           </p>
         </div>
-      </section>
+      </HeroBackground>
 
       {/* Contact Form & Info */}
       <section className="py-16">
