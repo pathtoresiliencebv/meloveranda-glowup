@@ -59,7 +59,7 @@ const handler = async (req: Request): Promise<Response> => {
 
     // Send email to MeloVeranda in Contact Form 7 style
     const emailResponse = await resend.emails.send({
-      from: "MeloVeranda Contact Form <onboarding@resend.dev>",
+      from: "MeloVeranda Contact Form <contact@meloveranda.nl>",
       replyTo: email,
       to: ["info@meloveranda.nl"],
       subject: `[MELOVERANDA] ${subject || 'Ingevulde Contact Formulier'}`,
@@ -132,7 +132,7 @@ Datum: ${new Date().toLocaleString('nl-NL', { timeZone: 'Europe/Amsterdam' })}`,
 
     // Send confirmation email to customer
     await resend.emails.send({
-      from: "MeloVeranda <onboarding@resend.dev>",
+      from: "MeloVeranda <noreply@meloveranda.nl>",
       to: [email],
       subject: "Bedankt voor uw bericht - MeloVeranda",
       html: `
