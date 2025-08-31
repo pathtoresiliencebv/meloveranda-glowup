@@ -219,6 +219,106 @@ const portfolioProjects: PortfolioProject[] = [
     details: ["Volledige opening mogelijk", "Minimale bodemrails", "Gehard veiligheidsglas", "Soepele bediening"],
     location: "Laarbeek",
     year: "2024"
+  },
+  {
+    id: "21",
+    title: "Polycarbonaat Terrasoverkapping",
+    category: "overkapping",
+    description: "Stijlvolle polycarbonaat overkapping met antraciet frame",
+    image: "/lovable-uploads/2e2aca1d-16ec-4c93-9557-7b5e8ea5e1db.png",
+    details: ["Polycarbonaat dakplaten", "Antraciet aluminium frame", "Optimale lichtdoorval", "Weerbestendig"],
+    location: "Bergeijk",
+    year: "2024"
+  },
+  {
+    id: "22",
+    title: "Houten Frame Glazen Serre",
+    category: "glazen-schuifwanden",
+    description: "Luxe glazen serre met houten frame en complete beglazing",
+    image: "/lovable-uploads/c52a7d95-1bd4-4147-856e-79124a2a4ef0.png",
+    details: ["Houten frame constructie", "Volledig glazen wanden", "Natuurlijke materialen", "Klassieke uitstraling"],
+    location: "Reusel",
+    year: "2024"
+  },
+  {
+    id: "23",
+    title: "Glazen Veranda met Zonwering",
+    category: "glazen-schuifwanden",
+    description: "Moderne glazen veranda met geïntegreerde zonwering",
+    image: "/lovable-uploads/b0d53456-79f5-4498-af83-901e950d46dc.png",
+    details: ["Geïntegreerde zonwering", "Grote glaspartijen", "Optimale ventilatie", "Moderne afwerking"],
+    location: "Valkenswaard",
+    year: "2024"
+  },
+  {
+    id: "24",
+    title: "Premium Glazen Serre Interieur",
+    category: "glazen-schuifwanden",
+    description: "Luxe glazen serre met zonwering en premium afwerking",
+    image: "/lovable-uploads/1c799ad4-c3f3-45a5-b355-5646517f250f.png",
+    details: ["Zonwering geïntegreerd", "Premium glaspartijen", "Moderne inrichting", "Optimaal comfort"],
+    location: "Waalwijk",
+    year: "2024"
+  },
+  {
+    id: "25",
+    title: "Grote Glazen Veranda Exterior",
+    category: "glazen-schuifwanden",
+    description: "Ruime glazen veranda met complete glazen constructie",
+    image: "/lovable-uploads/5df3681b-7547-43cf-a296-c1f77daafbb0.png",
+    details: ["Grote afmetingen", "Volledig glazen constructie", "Moderne vormgeving", "Tuinintegratie"],
+    location: "Bladel",
+    year: "2024"
+  },
+  {
+    id: "26",
+    title: "Moderne Glazen Uitbouw",
+    category: "glazen-schuifwanden",
+    description: "Eigentijdse glazen uitbouw met strakke lijnen",
+    image: "/lovable-uploads/7856e18f-4202-4711-942a-5ab0bb0526b7.png",
+    details: ["Strakke vormgeving", "Glazen gevelpanelen", "Moderne architectuur", "Optimale lichtinval"],
+    location: "Oirschot",
+    year: "2024"
+  },
+  {
+    id: "27",
+    title: "Luxe Glazen Conservatorium",
+    category: "glazen-schuifwanden",
+    description: "Premium glazen conservatorium met volledige beglazing",
+    image: "/lovable-uploads/d6d23688-722e-45c0-b5d1-57f8f26f8743.png",
+    details: ["Conservatorium design", "Volledige beglazing", "Elegante afwerking", "Jaarrond comfort"],
+    location: "Hapert",
+    year: "2024"
+  },
+  {
+    id: "28",
+    title: "Terrasoverkapping Polycarbonaat",
+    category: "overkapping",
+    description: "Praktische terrasoverkapping met polycarbonaat dakbedekking",
+    image: "/lovable-uploads/aa7322c4-89a3-4fbc-90d1-915b0a7b7c02.png",
+    details: ["Polycarbonaat dakplaten", "Stevig aluminium frame", "Waterafvoer geïntegreerd", "Onderhoudsarm"],
+    location: "Eersel",
+    year: "2024"
+  },
+  {
+    id: "29",
+    title: "Glazen Tuinkamer Premium",
+    category: "glazen-schuifwanden",
+    description: "Luxe glazen tuinkamer met moderne afwerking",
+    image: "/lovable-uploads/c71a925a-958e-4326-9db9-c2df8a4ec36c.png",
+    details: ["Premium afwerking", "Grote glaspartijen", "Moderne vormgeving", "Perfecte tuinintegratie"],
+    location: "Riethoven",
+    year: "2024"
+  },
+  {
+    id: "30",
+    title: "Moderne Glazen Veranda Elevated",
+    category: "glazen-schuifwanden",
+    description: "Verhoogde glazen veranda met panoramisch zicht",
+    image: "/lovable-uploads/e157eded-f80b-4af9-a621-f790b138410b.png",
+    details: ["Verhoogde constructie", "Panoramisch uitzicht", "Moderne glaspartijen", "Exclusief design"],
+    location: "Luyksgestel",
+    year: "2024"
   }
 ];
 
