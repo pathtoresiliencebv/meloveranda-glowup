@@ -319,6 +319,66 @@ const portfolioProjects: PortfolioProject[] = [
     details: ["Verhoogde constructie", "Panoramisch uitzicht", "Moderne glaspartijen", "Exclusief design"],
     location: "Luyksgestel",
     year: "2024"
+  },
+  {
+    id: "31",
+    title: "Moderne Glazen Veranda met Schuifpanelen",
+    category: "glazen-schuifwanden",
+    description: "Stijlvolle glazen veranda met grote schuifpanelen en moderne afwerking",
+    image: "/lovable-uploads/24bece07-24b5-4997-882c-91d89a4c9bcf.png",
+    details: ["Grote schuifpanelen", "Moderne vormgeving", "Optimale doorkijk", "Antraciet frame"],
+    location: "Steensel",
+    year: "2024"
+  },
+  {
+    id: "32",
+    title: "Glazen Veranda Interieur met LED",
+    category: "glazen-schuifwanden",
+    description: "Luxe glazen veranda interieur met geïntegreerde LED verlichting",
+    image: "/lovable-uploads/904b10bd-c8e8-4f0d-b74c-0f4c03ea3c81.png",
+    details: ["LED verlichting geïntegreerd", "Glazen wanden", "Moderne vloer", "Perfect interieurklimaat"],
+    location: "Wintelre",
+    year: "2024"
+  },
+  {
+    id: "33",
+    title: "Veranda met Polycarbonaat en LED",
+    category: "glazen-schuifwanden",
+    description: "Moderne veranda met polycarbonaat dak en sfeervolle LED verlichting",
+    image: "/lovable-uploads/244aee52-b3e7-44ed-8ebd-eda3362148cf.png",
+    details: ["Polycarbonaat dakbedekking", "LED strips", "Glazen zijwanden", "Optimale lichtinval"],
+    location: "Vessem",
+    year: "2024"
+  },
+  {
+    id: "34",
+    title: "Glazen Veranda met Privacy Scherm",
+    category: "glazen-schuifwanden",
+    description: "Glazen veranda met privacy scherm en polycarbonaat dak",
+    image: "/lovable-uploads/65fbe8d9-2647-4a09-bf11-298897af0a7e.png",
+    details: ["Privacy scherm", "Polycarbonaat dak", "Glazen schuifwanden", "Moderne vormgeving"],
+    location: "Knegsel",
+    year: "2024"
+  },
+  {
+    id: "35",
+    title: "Premium Glazen Veranda Systeem",
+    category: "glazen-schuifwanden",
+    description: "Premium glazen veranda met complete schuifwand systeem",
+    image: "/lovable-uploads/7e7dfd3e-acc5-4da7-8f14-f98e919047e9.png",
+    details: ["Complete schuifwand", "Premium glaspartijen", "Volledige opening", "Elegante afwerking"],
+    location: "Hoogeloon",
+    year: "2024"
+  },
+  {
+    id: "36",
+    title: "Compact Glazen Veranda",
+    category: "glazen-schuifwanden",
+    description: "Compacte glazen veranda met polycarbonaat dak voor kleinere ruimtes",
+    image: "/lovable-uploads/28ffd058-b85e-447c-bdef-a7dacce04d63.png",
+    details: ["Compact formaat", "Polycarbonaat dak", "Glazen schuifpanelen", "Ideaal voor kleine tuinen"],
+    location: "Duizel",
+    year: "2024"
   }
 ];
 
