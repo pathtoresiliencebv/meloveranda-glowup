@@ -17,7 +17,7 @@ export const Logo = ({ size = "md", className, linkTo = "/" }: LogoProps) => {
   const logoImage = (
     <img
       src="/lovable-uploads/28e0fc98-b40a-4ac7-a157-a928634aab0c.png"
-      alt="MeloVeranda - Specialist in luxe overkappingen en veranda's"
+      alt="Melo Montage Service - Specialist in luxe overkappingen en veranda's"
       className={cn(sizeClasses[size], className)}
       onError={(e) => {
         // Fallback to text logo if image fails to load
@@ -27,7 +27,7 @@ export const Logo = ({ size = "md", className, linkTo = "/" }: LogoProps) => {
         if (parent) {
           parent.innerHTML = `
             <span class="text-2xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-              MELO<span class="text-primary">VERANDA</span>
+              MELO<span class="text-primary">MONTAGE</span>
             </span>
           `;
         }
