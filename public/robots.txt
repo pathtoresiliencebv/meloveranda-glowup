@@ -1,14 +1,27 @@
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://meloveranda.nl/sitemap.xml
+
+# Disallow admin/staging areas
+Disallow: /admin/
+Disallow: /staging/
+Disallow: /_next/
+Disallow: /api/
+
+# Allow all major search engines
 User-agent: Googlebot
 Allow: /
 
 User-agent: Bingbot
 Allow: /
 
-User-agent: Twitterbot
+User-agent: DuckDuckBot
 Allow: /
 
-User-agent: facebookexternalhit
+User-agent: Slurp
 Allow: /
 
-User-agent: *
-Allow: /
+# Crawl-delay for resource conservation
+Crawl-delay: 1

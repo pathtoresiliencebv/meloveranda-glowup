@@ -7,10 +7,24 @@ import { Textarea } from "@/components/ui/textarea";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Phone, Mail, MapPin, Clock, CheckCircle } from "lucide-react";
 import { HeroBackground } from "@/components/ui/hero-background";
+import { SEOHead } from "@/components/ui/seo-head";
+import { getLocalBusinessSchema, getBreadcrumbSchema } from "@/lib/schema-data";
 
 const Contact = () => {
+  const breadcrumbSchema = getBreadcrumbSchema([
+    { name: "Home", url: "/" },
+    { name: "Contact", url: "/contact" }
+  ]);
+
   return (
     <div className="min-h-screen bg-background">
+      <SEOHead
+        title="Contact & Offerte - MeloVeranda | Gratis Inmeetservice Limburg"
+        description="Neem contact op voor een gratis offerte op veranda's en overkappingen. Gratis inmeetservice in Limburg, Nederland en België. ☎ +31 6 27 34 42 88"
+        keywords="contact MeloVeranda, gratis offerte veranda, inmeetservice Limburg, veranda montage contact, overkapping offerte"
+        canonicalUrl="/contact"
+        schemaData={[getLocalBusinessSchema(), breadcrumbSchema]}
+      />
       <Navigation />
       
       {/* Hero Section */}

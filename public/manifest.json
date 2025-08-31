@@ -1,0 +1,29 @@
+{
+  "name": "MeloVeranda - Luxe Overkappingen & Veranda's",
+  "short_name": "MeloVeranda",
+  "description": "Professionele veranda's en overkappingen in Limburg. Vakkundig werk, 10 jaar garantie, gratis advies.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#2563eb",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/favicon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/favicon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable any"
+    }
+  ],
+  "categories": ["business", "construction", "home-improvement"],
+  "lang": "nl",
+  "scope": "/",
+  "related_applications": [],
+  "prefer_related_applications": false
+}

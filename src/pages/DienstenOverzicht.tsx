@@ -5,6 +5,8 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { ArrowRight, Shield, Wind, Sun, Home, Wrench } from "lucide-react";
 import { Link } from "react-router-dom";
 import { HeroBackground } from "@/components/ui/hero-background";
+import { SEOHead } from "@/components/ui/seo-head";
+import { getServiceSchema, getBreadcrumbSchema } from "@/lib/schema-data";
 
 const services = [
   {
@@ -50,8 +52,25 @@ const services = [
 ];
 
 const DienstenOverzicht = () => {
+  const breadcrumbSchema = getBreadcrumbSchema([
+    { name: "Home", url: "/" },
+    { name: "Diensten", url: "/diensten" }
+  ]);
+
+  const serviceSchema = getServiceSchema(
+    "Veranda & Overkapping Diensten",
+    "Complete dienstverlening voor veranda's en overkappingen in Limburg: spie op schutting, glazen schuifwanden, zonwering, zijwanden en professionele montage."
+  );
+
   return (
     <div className="min-h-screen bg-background">
+      <SEOHead
+        title="Diensten Overzicht - MeloVeranda | Complete Veranda Oplossingen"
+        description="Ontdek onze complete dienstverlening: spie op schutting, glazen schuifwanden, zonwering, zijwanden en professionele montage in Limburg."
+        keywords="veranda diensten, glazen schuifwanden service, zonwering montage, spie op schutting, zijwand montage, veranda service Limburg"
+        canonicalUrl="/diensten"
+        schemaData={[serviceSchema, breadcrumbSchema]}
+      />
       <Navigation />
       
       {/* Hero Section */}

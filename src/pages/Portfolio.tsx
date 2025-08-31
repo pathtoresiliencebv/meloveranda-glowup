@@ -8,6 +8,8 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
 import { ChevronLeft, ChevronRight, X } from "lucide-react";
 import { HeroBackground } from "@/components/ui/hero-background";
+import { SEOHead } from "@/components/ui/seo-head";
+import { getLocalBusinessSchema, getBreadcrumbSchema } from "@/lib/schema-data";
 
 interface PortfolioProject {
   id: string;
@@ -399,6 +401,11 @@ const Portfolio = () => {
     ? portfolioProjects 
     : portfolioProjects.filter(project => project.category === selectedCategory);
 
+  const breadcrumbSchema = getBreadcrumbSchema([
+    { name: "Home", url: "/" },
+    { name: "Portfolio", url: "/portfolio" }
+  ]);
+
   const openLightbox = (index: number) => {
     setSelectedImageIndex(index);
   };
@@ -421,6 +428,13 @@ const Portfolio = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <SEOHead
+        title="Portfolio & Projecten - MeloVeranda | Bekijk Ons Werk"
+        description="Bekijk onze gerealiseerde veranda's en overkappingen in Limburg. Van glazen schuifwanden tot terrasoverkappingen - elk project op maat gemaakt."
+        keywords="portfolio MeloVeranda, veranda projecten, glazen schuifwanden voorbeelden, overkapping portfolio, gerealiseerde veranda's Limburg"
+        canonicalUrl="/portfolio"
+        schemaData={[getLocalBusinessSchema(), breadcrumbSchema]}
+      />
       <Navigation />
       
       {/* Hero Section */}
