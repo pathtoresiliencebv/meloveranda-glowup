@@ -16,7 +16,7 @@ export const Logo = ({ size = "md", className, linkTo = "/" }: LogoProps) => {
 
   const logoImage = (
     <img
-      src="/lovable-uploads/7e7dfd3e-acc5-4da7-8f14-f98e919047e9.png"
+      src="/lovable-uploads/28e0fc98-b40a-4ac7-a157-a928634aab0c.png"
       alt="MeloVeranda - Specialist in luxe overkappingen en veranda's"
       className={cn(sizeClasses[size], className)}
       onError={(e) => {
