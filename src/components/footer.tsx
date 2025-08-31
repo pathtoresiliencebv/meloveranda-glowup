@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Phone, Mail, MapPin, Facebook, Instagram, Linkedin } from "lucide-react";
+import { Logo } from "@/components/ui/logo";
 
 export const Footer = () => {
   return (
@@ -8,9 +9,9 @@ export const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
           <div>
-            <h3 className="text-2xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent mb-4">
-              MELO<span className="text-primary">VERANDA</span>
-            </h3>
+            <div className="mb-4">
+              <Logo size="lg" linkTo="/" />
+            </div>
             <p className="text-muted-foreground mb-4 leading-relaxed">
               Uw specialist in luxe overkappingen en veranda's. 
               Vakwerk met een persoonlijke touch voor heel Nederland en België.

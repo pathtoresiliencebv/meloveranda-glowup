@@ -8,6 +8,7 @@ import {
 } from "@/components/ui/dropdown-menu";
 import { Menu, X, ChevronDown } from "lucide-react";
 import { Link } from "react-router-dom";
+import { Logo } from "@/components/ui/logo";
 
 export const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -33,11 +34,7 @@ export const Navigation = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <div className="flex-shrink-0">
-            <h1 className="text-2xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-              MELO<span className="text-primary">VERANDA</span>
-            </h1>
-          </div>
+          <Logo size="md" linkTo="/" />
 
           {/* Desktop Navigation */}
           <div className="hidden md:block">
