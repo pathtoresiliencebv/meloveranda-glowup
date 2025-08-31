@@ -78,7 +78,7 @@ export const ContactSection = () => {
                   </div>
                   <div>
                     <h4 className="font-semibold text-foreground mb-1">Telefoon</h4>
-                    <p className="text-muted-foreground">+31 (0)6 12 34 56 78</p>
+                    <p className="text-muted-foreground">+31 6 27 34 42 88</p>
                     <p className="text-sm text-muted-foreground mt-1">Ma-Vr: 08:00 - 18:00</p>
                   </div>
                 </div>
@@ -108,8 +108,8 @@ export const ContactSection = () => {
                   </div>
                   <div>
                     <h4 className="font-semibold text-foreground mb-1">Locatie</h4>
-                    <p className="text-muted-foreground">Actief in heel Limburg</p>
-                    <p className="text-sm text-muted-foreground mt-1">Ook heel Nederland & België</p>
+                    <p className="text-muted-foreground">Jan Campertstraat 13 GB 41</p>
+                    <p className="text-sm text-muted-foreground mt-1">6416SG Heerlen - Ook heel Nederland & België</p>
                   </div>
                 </div>
               </CardContent>

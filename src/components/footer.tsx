@@ -59,15 +59,22 @@ export const Footer = () => {
             <div className="space-y-3">
               <div className="flex items-center gap-3">
                 <Phone className="w-4 h-4 text-primary flex-shrink-0" />
-                <span className="text-muted-foreground text-sm">+31 (0)6 12 34 56 78</span>
+                <span className="text-muted-foreground text-sm">+31 6 27 34 42 88</span>
               </div>
               <div className="flex items-center gap-3">
                 <Mail className="w-4 h-4 text-primary flex-shrink-0" />
                 <span className="text-muted-foreground text-sm">info@meloveranda.nl</span>
               </div>
-              <div className="flex items-center gap-3">
-                <MapPin className="w-4 h-4 text-primary flex-shrink-0" />
-                <span className="text-muted-foreground text-sm">Heel Nederland & België</span>
+              <div className="flex items-start gap-3">
+                <MapPin className="w-4 h-4 text-primary flex-shrink-0 mt-0.5" />
+                <div className="text-muted-foreground text-sm">
+                  <div>Jan Campertstraat 13 GB 41</div>
+                  <div>6416SG Heerlen</div>
+                  <div className="mt-2 space-y-1">
+                    <div>BTW: NL003652289B56</div>
+                    <div>KVK: 81453787</div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -76,7 +83,7 @@ export const Footer = () => {
         {/* Bottom Section */}
         <div className="border-t border-border mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-muted-foreground text-sm">
-            © 2024 MeloVeranda. Alle rechten voorbehouden.
+            © 2024 Melo Montage Service. Alle rechten voorbehouden.
           </p>
           <div className="flex space-x-6 mt-4 md:mt-0">
             <a href="#" className="text-muted-foreground hover:text-primary text-sm transition-colors">Privacybeleid</a>

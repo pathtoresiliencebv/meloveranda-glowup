@@ -114,7 +114,7 @@ const Contact = () => {
                   <CardContent className="p-6 text-center">
                     <Phone className="h-8 w-8 text-primary mx-auto mb-4" />
                     <h3 className="font-semibold mb-2">Telefoon</h3>
-                    <p className="text-muted-foreground">+31 6 12345678</p>
+                    <p className="text-muted-foreground">+31 6 27 34 42 88</p>
                     <p className="text-sm text-muted-foreground mt-1">Ma-Vr 8:00-18:00</p>
                   </CardContent>
                 </Card>
@@ -132,8 +132,8 @@ const Contact = () => {
                   <CardContent className="p-6 text-center">
                     <MapPin className="h-8 w-8 text-primary mx-auto mb-4" />
                     <h3 className="font-semibold mb-2">Locatie</h3>
-                    <p className="text-muted-foreground">Regio Eindhoven</p>
-                    <p className="text-sm text-muted-foreground mt-1">Binnen 50km</p>
+                    <p className="text-muted-foreground">Jan Campertstraat 13 GB 41</p>
+                    <p className="text-sm text-muted-foreground mt-1">6416SG Heerlen</p>
                   </CardContent>
                 </Card>
 
