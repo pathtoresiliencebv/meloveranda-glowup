@@ -43,66 +43,73 @@ const Contact = () => {
                   </p>
                 </CardHeader>
                 <CardContent className="space-y-6">
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <form action="mailto:info@meloveranda.nl" method="post" encType="text/plain" className="space-y-6">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                      <div className="space-y-2">
+                        <label htmlFor="name" className="text-sm font-medium text-foreground">
+                          Naam *
+                        </label>
+                        <Input
+                          id="name"
+                          name="name"
+                          placeholder="Uw volledige naam"
+                          required
+                        />
+                      </div>
+                      <div className="space-y-2">
+                        <label htmlFor="phone" className="text-sm font-medium text-foreground">
+                          Telefoon *
+                        </label>
+                        <Input
+                          id="phone"
+                          name="phone"
+                          placeholder="06 12345678"
+                          required
+                        />
+                      </div>
+                    </div>
+                    
                     <div className="space-y-2">
-                      <label htmlFor="name" className="text-sm font-medium text-foreground">
-                        Naam *
+                      <label htmlFor="email" className="text-sm font-medium text-foreground">
+                        E-mail *
                       </label>
                       <Input
-                        id="name"
-                        placeholder="Uw volledige naam"
+                        id="email"
+                        name="email"
+                        type="email"
+                        placeholder="uw.email@voorbeeld.nl"
                         required
                       />
                     </div>
+                    
                     <div className="space-y-2">
-                      <label htmlFor="phone" className="text-sm font-medium text-foreground">
-                        Telefoon *
+                      <label htmlFor="subject" className="text-sm font-medium text-foreground">
+                        Onderwerp
                       </label>
                       <Input
-                        id="phone"
-                        placeholder="06 12345678"
+                        id="subject"
+                        name="subject"
+                        placeholder="Offerte aanvraag glazen veranda"
+                      />
+                    </div>
+                    
+                    <div className="space-y-2">
+                      <label htmlFor="message" className="text-sm font-medium text-foreground">
+                        Bericht *
+                      </label>
+                      <Textarea
+                        id="message"
+                        name="message"
+                        placeholder="Beschrijf uw wensen en geef eventueel afmetingen door..."
+                        className="min-h-[120px]"
                         required
                       />
                     </div>
-                  </div>
-                  
-                  <div className="space-y-2">
-                    <label htmlFor="email" className="text-sm font-medium text-foreground">
-                      E-mail *
-                    </label>
-                    <Input
-                      id="email"
-                      type="email"
-                      placeholder="uw.email@voorbeeld.nl"
-                      required
-                    />
-                  </div>
-                  
-                  <div className="space-y-2">
-                    <label htmlFor="subject" className="text-sm font-medium text-foreground">
-                      Onderwerp
-                    </label>
-                    <Input
-                      id="subject"
-                      placeholder="Offerte aanvraag glazen veranda"
-                    />
-                  </div>
-                  
-                  <div className="space-y-2">
-                    <label htmlFor="message" className="text-sm font-medium text-foreground">
-                      Bericht *
-                    </label>
-                    <Textarea
-                      id="message"
-                      placeholder="Beschrijf uw wensen en geef eventueel afmetingen door..."
-                      className="min-h-[120px]"
-                      required
-                    />
-                  </div>
-                  
-                  <Button className="w-full bg-gradient-to-r from-primary to-accent hover:shadow-warm transition-all duration-300" size="lg">
-                    Verstuur Bericht
-                  </Button>
+                    
+                    <Button type="submit" className="w-full bg-gradient-to-r from-primary to-accent hover:shadow-warm transition-all duration-300" size="lg">
+                      Verstuur Bericht
+                    </Button>
+                  </form>
                 </CardContent>
               </Card>
             </div>

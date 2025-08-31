@@ -3,6 +3,7 @@ import { Footer } from "@/components/footer";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
+import { HeroBackground } from "@/components/ui/hero-background";
 import { Home, Check, ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 
@@ -53,22 +54,22 @@ const Zijwand = () => {
       </section>
 
       {/* Hero Section */}
-      <section className="relative py-16 bg-gradient-to-r from-primary/10 to-accent/10">
+      <HeroBackground>
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <div className="w-20 h-20 mx-auto mb-6 rounded-full bg-gradient-to-r from-primary to-accent flex items-center justify-center">
               <Home className="w-10 h-10 text-white" />
             </div>
-            <h1 className="text-4xl md:text-5xl font-bold text-muted-foreground mb-6">
+            <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
               Zijwand oplossingen
             </h1>
-            <p className="text-xl text-muted-foreground leading-relaxed">
+            <p className="text-xl text-white/90 leading-relaxed">
               Wilt u uw veranda afdichten aan de zijkanten? Dan is dat mogelijk met 
               verschillende materiaalopties die perfect passen bij uw wensen en budget.
             </p>
           </div>
         </div>
-      </section>
+      </HeroBackground>
 
       {/* Options Section */}
       <section className="py-16">
@@ -100,12 +101,15 @@ const Zijwand = () => {
                       </div>
                     </div>
                     
-                    <div className="aspect-[4/3] bg-gradient-to-br from-muted to-muted/60 rounded-lg flex items-center justify-center">
-                      <div className="text-center p-6">
-                        <Home className="w-12 h-12 text-muted-foreground mx-auto mb-3" />
-                        <p className="text-muted-foreground text-sm">{option.title}</p>
-                      </div>
-                    </div>
+                    <Card className="overflow-hidden">
+                      <CardContent className="p-0">
+                        <img 
+                          src="/lovable-uploads/c52a7d95-1bd4-4147-856e-79124a2a4ef0.png" 
+                          alt={`${option.title} - veranda zijwand oplossing`}
+                          className="w-full aspect-[4/3] object-cover"
+                        />
+                      </CardContent>
+                    </Card>
                   </div>
                 </CardContent>
               </Card>

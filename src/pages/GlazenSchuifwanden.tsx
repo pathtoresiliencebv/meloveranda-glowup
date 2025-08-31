@@ -3,6 +3,7 @@ import { Footer } from "@/components/footer";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
+import { HeroBackground } from "@/components/ui/hero-background";
 import { Wind, Check, ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 
@@ -44,22 +45,22 @@ const GlazenSchuifwanden = () => {
       </section>
 
       {/* Hero Section */}
-      <section className="relative py-16 bg-gradient-to-r from-primary/10 to-accent/10">
+      <HeroBackground>
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <div className="w-20 h-20 mx-auto mb-6 rounded-full bg-gradient-to-r from-primary to-accent flex items-center justify-center">
               <Wind className="w-10 h-10 text-white" />
             </div>
-            <h1 className="text-4xl md:text-5xl font-bold text-muted-foreground mb-6">
+            <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
               Glazen schuifwanden
             </h1>
-            <p className="text-xl text-muted-foreground leading-relaxed">
+            <p className="text-xl text-white/90 leading-relaxed">
               Met de schuifdeuren kunt u uw veranda dichtmaken wanneer het buiten fris 
               begint te worden, maar ook open zetten wanneer het warm wordt.
             </p>
           </div>
         </div>
-      </section>
+      </HeroBackground>
 
       {/* Content Section */}
       <section className="py-16">
@@ -98,17 +99,39 @@ const GlazenSchuifwanden = () => {
               </div>
             </div>
 
-            {/* Image Placeholder */}
-            <Card className="overflow-hidden">
-              <CardContent className="p-0">
-                <div className="aspect-[4/3] bg-gradient-to-br from-muted to-muted/60 flex items-center justify-center">
-                  <div className="text-center p-8">
-                    <Wind className="w-16 h-16 text-muted-foreground mx-auto mb-4" />
-                    <p className="text-muted-foreground">Afbeelding van glazen schuifwanden</p>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
+            {/* Project Images */}
+            <div className="space-y-6">
+              <Card className="overflow-hidden">
+                <CardContent className="p-0">
+                  <img 
+                    src="/lovable-uploads/38b48f40-0d5d-40d4-9f25-de854a8ea3d6.png" 
+                    alt="Glazen schuifwanden project - moderne veranda met glas"
+                    className="w-full aspect-[4/3] object-cover"
+                  />
+                </CardContent>
+              </Card>
+              
+              <div className="grid grid-cols-2 gap-4">
+                <Card className="overflow-hidden">
+                  <CardContent className="p-0">
+                    <img 
+                      src="/lovable-uploads/c4c8b06b-6ba3-4ac7-ad05-de2eec71d425.png" 
+                      alt="Glazen schuifwanden detail"
+                      className="w-full aspect-square object-cover"
+                    />
+                  </CardContent>
+                </Card>
+                <Card className="overflow-hidden">
+                  <CardContent className="p-0">
+                    <img 
+                      src="/lovable-uploads/d68edfdd-983b-4d75-8ad9-be0b11f4ca11.png" 
+                      alt="Glazen veranda systeem"
+                      className="w-full aspect-square object-cover"
+                    />
+                  </CardContent>
+                </Card>
+              </div>
+            </div>
           </div>
         </div>
       </section>

@@ -3,6 +3,7 @@ import { Footer } from "@/components/footer";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
+import { HeroBackground } from "@/components/ui/hero-background";
 import { Wrench, Check, ArrowRight, Users, Clock, Award } from "lucide-react";
 import { Link } from "react-router-dom";
 
@@ -62,22 +63,22 @@ const LosseMontage = () => {
       </section>
 
       {/* Hero Section */}
-      <section className="relative py-16 bg-gradient-to-r from-primary/10 to-accent/10">
+      <HeroBackground>
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <div className="w-20 h-20 mx-auto mb-6 rounded-full bg-gradient-to-r from-primary to-accent flex items-center justify-center">
               <Wrench className="w-10 h-10 text-white" />
             </div>
-            <h1 className="text-4xl md:text-5xl font-bold text-muted-foreground mb-6">
+            <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
               Losse montage
             </h1>
-            <p className="text-xl text-muted-foreground leading-relaxed">
+            <p className="text-xl text-white/90 leading-relaxed">
               Uiteraard kunnen wij het ook voor u doen. Tuinmaximaal is gestopt met het bieden van montage 
               en service, maar bij Melo veranda in Limburg profiteert u nog wel van deze mogelijkheden.
             </p>
           </div>
         </div>
-      </section>
+      </HeroBackground>
 
       {/* Services Section */}
       <section className="py-16">
@@ -121,15 +122,14 @@ const LosseMontage = () => {
               </div>
             </div>
 
-            {/* Image Placeholder */}
+            {/* Project Images */}
             <Card className="overflow-hidden">
               <CardContent className="p-0">
-                <div className="aspect-[4/3] bg-gradient-to-br from-muted to-muted/60 flex items-center justify-center">
-                  <div className="text-center p-8">
-                    <Wrench className="w-16 h-16 text-muted-foreground mx-auto mb-4" />
-                    <p className="text-muted-foreground">Professionele montage service</p>
-                  </div>
-                </div>
+                <img 
+                  src="/lovable-uploads/9015fa2c-4545-4112-85cf-e90a951633c9.png" 
+                  alt="Professionele montage van veranda overkapping"
+                  className="w-full aspect-[4/3] object-cover"
+                />
               </CardContent>
             </Card>
           </div>

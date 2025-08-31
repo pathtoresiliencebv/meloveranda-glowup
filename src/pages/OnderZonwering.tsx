@@ -3,6 +3,7 @@ import { Footer } from "@/components/footer";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
+import { HeroBackground } from "@/components/ui/hero-background";
 import { Sun, Check, ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 
@@ -44,22 +45,22 @@ const OnderZonwering = () => {
       </section>
 
       {/* Hero Section */}
-      <section className="relative py-16 bg-gradient-to-r from-primary/10 to-accent/10">
+      <HeroBackground>
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <div className="w-20 h-20 mx-auto mb-6 rounded-full bg-gradient-to-r from-primary to-accent flex items-center justify-center">
               <Sun className="w-10 h-10 text-white" />
             </div>
-            <h1 className="text-4xl md:text-5xl font-bold text-muted-foreground mb-6">
+            <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
               Onder zonwering
             </h1>
-            <p className="text-xl text-muted-foreground leading-relaxed">
+            <p className="text-xl text-white/90 leading-relaxed">
               Wilt u graag een onder zonwering van tuinmaximaal voor uw overkapping en past dat niet? 
               Dan kunnen wij die op maat voor u maken.
             </p>
           </div>
         </div>
-      </section>
+      </HeroBackground>
 
       {/* Content Section */}
       <section className="py-16">
@@ -103,15 +104,14 @@ const OnderZonwering = () => {
               </div>
             </div>
 
-            {/* Image Placeholder */}
+            {/* Project Images */}
             <Card className="overflow-hidden">
               <CardContent className="p-0">
-                <div className="aspect-[4/3] bg-gradient-to-br from-muted to-muted/60 flex items-center justify-center">
-                  <div className="text-center p-8">
-                    <Sun className="w-16 h-16 text-muted-foreground mx-auto mb-4" />
-                    <p className="text-muted-foreground">Afbeelding van onder zonwering</p>
-                  </div>
-                </div>
+                <img 
+                  src="/lovable-uploads/89d4c57d-bc6a-4a05-a26e-7b858f292143.png" 
+                  alt="Onder zonwering op maat voor veranda overkapping"
+                  className="w-full aspect-[4/3] object-cover"
+                />
               </CardContent>
             </Card>
           </div>
