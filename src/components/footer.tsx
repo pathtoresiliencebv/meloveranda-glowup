@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Phone, Mail, MapPin, Facebook, Instagram, Linkedin } from "lucide-react";
 import { Logo } from "@/components/ui/logo";
+import { Link } from "react-router-dom";
 
 export const Footer = () => {
   return (
@@ -86,8 +87,8 @@ export const Footer = () => {
             © 2024 Melo Montage Service. Alle rechten voorbehouden.
           </p>
           <div className="flex space-x-6 mt-4 md:mt-0">
-            <a href="#" className="text-muted-foreground hover:text-primary text-sm transition-colors">Privacybeleid</a>
-            <a href="#" className="text-muted-foreground hover:text-primary text-sm transition-colors">Algemene Voorwaarden</a>
+            <Link to="/privacy-policy" className="text-muted-foreground hover:text-primary text-sm transition-colors">Privacybeleid</Link>
+            <Link to="/algemene-voorwaarden" className="text-muted-foreground hover:text-primary text-sm transition-colors">Algemene Voorwaarden</Link>
             <a href="#" className="text-muted-foreground hover:text-primary text-sm transition-colors">Cookie Beleid</a>
           </div>
         </div>

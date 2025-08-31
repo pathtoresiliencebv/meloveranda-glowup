@@ -15,6 +15,8 @@ import OnderZonwering from "./pages/OnderZonwering";
 import Zijwand from "./pages/Zijwand";
 import LosseMontage from "./pages/LosseMontage";
 import OverOns from "./pages/OverOns";
+import AlgemeneVoorwaarden from "./pages/AlgemeneVoorwaarden";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
 
 const queryClient = new QueryClient();
 
@@ -35,6 +37,8 @@ const App = () => (
           <Route path="/diensten/onder-zonwering" element={<OnderZonwering />} />
           <Route path="/diensten/zijwand" element={<Zijwand />} />
           <Route path="/diensten/losse-montage" element={<LosseMontage />} />
+          <Route path="/algemene-voorwaarden" element={<AlgemeneVoorwaarden />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
