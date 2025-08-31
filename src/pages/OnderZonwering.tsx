@@ -50,7 +50,7 @@ const OnderZonwering = () => {
             <div className="w-20 h-20 mx-auto mb-6 rounded-full bg-gradient-to-r from-primary to-accent flex items-center justify-center">
               <Sun className="w-10 h-10 text-white" />
             </div>
-            <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
+            <h1 className="text-4xl md:text-5xl font-bold text-muted-foreground mb-6">
               Onder zonwering
             </h1>
             <p className="text-xl text-muted-foreground leading-relaxed">
@@ -91,13 +91,13 @@ const OnderZonwering = () => {
               </div>
 
               <div className="flex flex-col sm:flex-row gap-4">
-                <Button size="lg" asChild>
+                <Button size="lg" asChild className="bg-gradient-to-r from-primary to-accent hover:shadow-warm transition-all duration-300">
                   <Link to="/contact">
                     Offerte aanvragen
                     <ArrowRight className="w-4 h-4 ml-2" />
                   </Link>
                 </Button>
-                <Button size="lg" variant="outline" asChild>
+                <Button size="lg" variant="outline" asChild className="bg-gradient-to-r from-primary to-accent hover:shadow-warm transition-all duration-300 border-none text-white">
                   <Link to="/diensten">Alle diensten</Link>
                 </Button>
               </div>

@@ -16,8 +16,8 @@ export const Navigation = () => {
   const navItems = [
     { label: "Home", href: "/" },
     { label: "Portfolio", href: "/portfolio" },
-    { label: "Over Ons", href: "#about" },
-    { label: "Contact", href: "#contact" },
+    { label: "Over Ons", href: "/" },
+    { label: "Contact", href: "/contact" },
   ];
 
   const serviceItems = [

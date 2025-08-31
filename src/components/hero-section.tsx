@@ -23,8 +23,8 @@ export const HeroSection = () => {
 
           {/* Main Heading */}
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6">
-            <span className="block text-foreground">PROFESSIONEEL</span>
-            <span className="block bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+            <span className="block text-muted-foreground">PROFESSIONEEL</span>
+            <span className="block text-muted-foreground">
               & VAKKUNDIG WERK
             </span>
           </h1>
@@ -48,7 +48,7 @@ export const HeroSection = () => {
             <Button 
               variant="outline" 
               size="lg" 
-              className="border-2 border-primary/30 hover:bg-primary/5 text-lg px-8 py-4 group backdrop-blur-sm"
+              className="bg-gradient-to-r from-primary to-accent hover:shadow-warm transition-all duration-300 text-lg px-8 py-4 group backdrop-blur-sm border-none text-white"
             >
               <Play className="mr-2 h-5 w-5 group-hover:scale-110 transition-transform" />
               Bekijk Ons Werk

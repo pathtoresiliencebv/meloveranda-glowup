@@ -18,7 +18,7 @@ const Contact = () => {
           <Badge variant="outline" className="mb-4 bg-primary/10 text-primary border-primary/20">
             Contact & Offerte
           </Badge>
-          <h1 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-primary bg-clip-text text-transparent">
+          <h1 className="text-4xl md:text-6xl font-bold mb-6 text-muted-foreground">
             Vraag een Gratis Offerte Aan
           </h1>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-8">
@@ -99,7 +99,7 @@ const Contact = () => {
                     />
                   </div>
                   
-                  <Button className="w-full" size="lg">
+                  <Button className="w-full bg-gradient-to-r from-primary to-accent hover:shadow-warm transition-all duration-300" size="lg">
                     Verstuur Bericht
                   </Button>
                 </CardContent>
@@ -172,7 +172,7 @@ const Contact = () => {
                     <CheckCircle className="h-5 w-5 text-primary flex-shrink-0" />
                     <span className="text-sm">Geen verborgen kosten</span>
                   </div>
-                  <Button className="w-full mt-4">
+                  <Button className="w-full mt-4 bg-gradient-to-r from-primary to-accent hover:shadow-warm transition-all duration-300">
                     Plan Afspraak
                   </Button>
                 </CardContent>

@@ -428,7 +428,7 @@ const Portfolio = () => {
           <Badge variant="outline" className="mb-4 bg-primary/10 text-primary border-primary/20">
             Portfolio
           </Badge>
-          <h1 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-primary bg-clip-text text-transparent">
+          <h1 className="text-4xl md:text-6xl font-bold mb-6 text-muted-foreground">
             Onze Gerealiseerde Projecten
           </h1>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-8">
@@ -436,10 +436,10 @@ const Portfolio = () => {
             Van moderne glazen veranda's tot stijlvolle overkappingen - elk project wordt op maat gemaakt.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg">
+            <Button size="lg" className="bg-gradient-to-r from-primary to-accent hover:shadow-warm transition-all duration-300">
               Gratis Offerte Aanvragen
             </Button>
-            <Button variant="outline" size="lg">
+            <Button variant="outline" size="lg" className="bg-gradient-to-r from-primary to-accent hover:shadow-warm transition-all duration-300 border-none text-white">
               Bekijk Onze Diensten
             </Button>
           </div>

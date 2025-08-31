@@ -52,7 +52,7 @@ const DienstenOverzicht = () => {
       <section className="relative py-24 bg-gradient-to-r from-primary/10 to-accent/10">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl md:text-6xl font-bold text-foreground mb-6">
+            <h1 className="text-4xl md:text-6xl font-bold text-muted-foreground mb-6">
               Onze Diensten
             </h1>
             <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
@@ -91,7 +91,7 @@ const DienstenOverzicht = () => {
                         </li>
                       ))}
                     </ul>
-                    <Button asChild className="w-full">
+                    <Button asChild className="w-full bg-gradient-to-r from-primary to-accent hover:shadow-warm transition-all duration-300">
                       <Link to={`/diensten/${service.id}`}>
                         Meer informatie
                         <ArrowRight className="w-4 h-4 ml-2" />
@@ -114,7 +114,7 @@ const DienstenOverzicht = () => {
           <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
             Neem contact met ons op voor een vrijblijvende offerte en persoonlijk advies.
           </p>
-          <Button size="lg" variant="secondary" asChild>
+          <Button size="lg" variant="secondary" asChild className="bg-gradient-to-r from-primary to-accent hover:shadow-warm transition-all duration-300">
             <Link to="/contact">Contact opnemen</Link>
           </Button>
         </div>
