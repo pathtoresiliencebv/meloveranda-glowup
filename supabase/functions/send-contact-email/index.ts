@@ -32,8 +32,20 @@ const handler = async (req: Request): Promise<Response> => {
   try {
     const { name, email, phone, subject, message }: ContactEmailRequest = await req.json();
 
+    console.log('Received contact form data:', { name, email, phone, subject: subject || 'geen onderwerp' });
+
+    // Check if RESEND_API_KEY is available
+    const resendApiKey = Deno.env.get("RESEND_API_KEY");
+    if (!resendApiKey) {
+      console.error('RESEND_API_KEY is not configured');
+      throw new Error('Email service is not configured');
+    }
+
+    console.log('RESEND_API_KEY is configured');
+
     // Validation
     if (!name || !email || !phone || !message) {
+      console.error('Validation failed:', { name: !!name, email: !!email, phone: !!phone, message: !!message });
       return new Response(
         JSON.stringify({ error: "Alle verplichte velden moeten ingevuld zijn" }),
         {
@@ -42,6 +54,8 @@ const handler = async (req: Request): Promise<Response> => {
         }
       );
     }
+
+    console.log('Validation passed, sending email...');
 
     // Send email to MeloVeranda in Contact Form 7 style
     const emailResponse = await resend.emails.send({

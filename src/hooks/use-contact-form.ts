@@ -18,13 +18,20 @@ export const useContactForm = () => {
     setIsSubmitting(true);
     
     try {
+      console.log('Submitting contact form with data:', formData);
+      
       const { data, error } = await supabase.functions.invoke('send-contact-email', {
         body: formData
       });
 
+      console.log('Supabase function response:', { data, error });
+
       if (error) {
+        console.error('Supabase function error:', error);
         throw error;
       }
+
+      console.log('Email sent successfully:', data);
 
       toast({
         title: "Bericht verzonden!",
@@ -39,7 +46,7 @@ export const useContactForm = () => {
       toast({
         variant: "destructive",
         title: "Fout bij verzenden",
-        description: "Er ging iets mis. Probeer opnieuw of bel ons direct: +31 6 27 34 42 88",
+        description: `Er ging iets mis: ${error.message || 'Onbekende fout'}. Probeer opnieuw of bel ons direct: +31 6 27 34 42 88`,
         duration: 7000,
       });
 
