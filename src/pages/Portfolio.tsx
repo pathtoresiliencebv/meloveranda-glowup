@@ -25,7 +25,7 @@ const portfolioProjects: PortfolioProject[] = [
     title: "Moderne Glazen Veranda met Schuifwanden",
     category: "glazen-schuifwanden",
     description: "Complete glazen veranda met elektrische schuifwanden voor optimaal comfort",
-    image: "/placeholder.svg",
+    image: "/src/assets/portfolio/glazen-schuifwand-1.png",
     details: ["Helder glas 8mm gehard", "Aluminium profielen RAL 7016", "Elektrische bediening", "Automatische drainage"],
     location: "Eindhoven",
     year: "2024"
@@ -35,7 +35,7 @@ const portfolioProjects: PortfolioProject[] = [
     title: "Luxe Terrasoverkapping met Zonwering",
     category: "onder-zonwering",
     description: "Stijlvolle overkapping met geïntegreerde zonwering en LED verlichting",
-    image: "/placeholder.svg",
+    image: "/src/assets/portfolio/onder-zonwering-1.png",
     details: ["Motorische zonwering Somfy", "Dimbare LED strips", "Regensensor", "Windmeter"],
     location: "Helmond",
     year: "2024"
@@ -45,7 +45,7 @@ const portfolioProjects: PortfolioProject[] = [
     title: "Elegante Zijwand Constructie",
     category: "zijwand",
     description: "Strakke zijwand voor windbreking en privacy",
-    image: "/placeholder.svg",
+    image: "/src/assets/portfolio/zijwand-1.png",
     details: ["Windwering tot 6 bft", "Gehard veiligheidsglas", "Minimale onderhoudsprofielen", "5 jaar garantie"],
     location: "Tilburg",
     year: "2023"
@@ -55,7 +55,7 @@ const portfolioProjects: PortfolioProject[] = [
     title: "Grote Tuinkamer met Panorama Glas",
     category: "glazen-schuifwanden",
     description: "Ruime tuinkamer voor jaarrond gebruik met panoramische glaspartijen",
-    image: "/placeholder.svg",
+    image: "/src/assets/portfolio/glazen-schuifwand-2.png",
     details: ["Groot glasoppervlak", "Thermische breking", "Triple glas optie", "Volledige opening mogelijk"],
     location: "Best",
     year: "2024"
@@ -65,7 +65,7 @@ const portfolioProjects: PortfolioProject[] = [
     title: "Moderne Overkapping met Sfeerverlichting",
     category: "overkapping",
     description: "Eigentijdse overkapping met geïntegreerde verlichting",
-    image: "/placeholder.svg",
+    image: "/src/assets/portfolio/overkapping-1.png",
     details: ["Waterdichte LED strips", "Dimmer bediening", "Moderne vormgeving", "Onderhoudsvrij materiaal"],
     location: "Veldhoven",
     year: "2024"
@@ -75,7 +75,7 @@ const portfolioProjects: PortfolioProject[] = [
     title: "Glazen Schuifsysteem op Maat",
     category: "glazen-schuifwanden",
     description: "Op maat gemaakte schuifwanden voor perfecte aansluiting",
-    image: "/placeholder.svg",
+    image: "/src/assets/portfolio/glazen-schuifwand-3.png",
     details: ["Maatwerk oplossing", "Minimale bodemrails", "RVS hardware", "Gladde bediening"],
     location: "Eersel",
     year: "2023"
@@ -85,7 +85,7 @@ const portfolioProjects: PortfolioProject[] = [
     title: "Terrasoverkapping met Zijwanden",
     category: "overkapping",
     description: "Complete terrassen oplossing met zijwanden voor extra bescherming",
-    image: "/placeholder.svg",
+    image: "/src/assets/portfolio/overkapping-2.png",
     details: ["Gecombineerde oplossing", "Optimale bescherming", "Strak design", "Modulaire opbouw"],
     location: "Geldrop",
     year: "2024"
@@ -95,7 +95,7 @@ const portfolioProjects: PortfolioProject[] = [
     title: "Onder Zonwering Installatie",
     category: "onder-zonwering",
     description: "Professionele zonwering installatie onder bestaande overkapping",
-    image: "/placeholder.svg",
+    image: "/src/assets/portfolio/onder-zonwering-2.png",
     details: ["Bestaande constructie", "Perfecte pasvorm", "Kwaliteits doek", "Lange levensduur"],
     location: "Son",
     year: "2024"
